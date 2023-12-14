@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body{
+    margin: 0;
+}
+
+.nav-bar{
+    width: 100vw;
+    height: 50px;
+    background-color: brown;
+    position: fixed;
+    z-index: 2;
+}
+
+.landing-page{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: bisque;
+}
+
+.intro{
+    position: absolute;
+    border: solid;
+    padding: 20px;
+    bottom: 20%;
+    left: 5%;
+    background-color: rgb(185, 160, 123);
+    transform: translateY(200%);
+    transition: transform 0.5s ease;
+}
+.intro.show{
+    transform: translateY(0);
+}
+.form{
+    background-color: azure;
+    position: absolute;
+    height: 65vh;
+    border: solid;
+    right: 5%;
+    width: 35vw;
+    bottom: 20%;
+}
+.introduction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    margin-top: 70px;
+    color: brown;
+    font-size: 40px;
+    transform: translateY(500%);
+    overflow: hidden;
+    transition: transform 0.6s ease;
+}
+
+.travel-intro{
+    text-align: center;
+    text-wrap: wrap;
+    color: rgb(116, 99, 87);
+    transform: translateY(500%);
+    overflow: hidden;
+    transition: transform 0.6s ease;
+    max-width: 800px;
+}
+.heading.show, .travel-intro.show{
+    transform: translateY(0);
+    overflow: hidden;
+}
+
+.places{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.place{
+    width: 75vw;
+    height: 300px;
+    background-color: rgb(134, 116, 93);
+    margin: 12px;
+    position: relative;
+}
+.place-intro{
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    width: 45%;
+    border: solid;
+    height: 70%;
+    text-align: center;
+}
+
+.picture{
+    border: solid;
+    text-align: center;
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
